@@ -29,12 +29,12 @@
      * precio del billete y el origen y destino dados. Se asume que el precio
      * del billete que se recibe es mayor que 0.
      */
-    public MaquinaExpendedoraSimple( int Billete, String destino) {
+    public MaquinaExpendedoraSimple( int Billete, String Destino) {
         precioBillete = Billete;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
         estacionOrigen = "leon";
-        estacionDestino = destino;
+        estacionDestino = Destino;
     }
     
     /**
@@ -75,4 +75,12 @@
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
     }
+    
+    /**
+     * Devuelve el precio del billete
+     */
+    public int totalDineroAcumulado() {
+        return totalDineroAcumulado;
+    }
+
 }
