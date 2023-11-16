@@ -86,7 +86,14 @@
     /**
      * cambia el precio del billete
      */
-    public void setPrecioBillete(int Billete) {
-        precioBillete=Billete;
+    public void setPrecioBillete(int billete) {
+        precioBillete = billete;
+    }
+    
+     /**
+     * reduce el precio del billete
+     */
+    public void setreducirPrecioBillete(int descuento) {
+        precioBillete =precioBillete - descuento;
     }
 }
