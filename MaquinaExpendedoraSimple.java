@@ -82,5 +82,11 @@
     public int totalDineroAcumulado() {
         return totalDineroAcumulado;
     }
-
+    
+    /**
+     * cambia el precio del billete
+     */
+    public void setPrecioBillete(int Billete) {
+        precioBillete=Billete;
+    }
 }
