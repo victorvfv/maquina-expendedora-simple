@@ -93,7 +93,14 @@
      /**
      * reduce el precio del billete
      */
-    public void setreducirPrecioBillete(int descuento) {
-        precioBillete =precioBillete - descuento;
+    public void reducirPrecioBillete(int descuento) {
+        precioBillete = precioBillete - descuento;
+    }
+    
+     /**
+     * reduce el precio del billete
+     */
+    public void vaciarDepositoDinero() {
+        totalDineroAcumulado = 0;
     }
 }
